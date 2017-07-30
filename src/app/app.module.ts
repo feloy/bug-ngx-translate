@@ -16,7 +16,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'bug-ngx-translate'}),
     HttpClientModule,
     TranslateModule.forRoot({
         loader: {
